@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 15 ene 2024 21:04:16 by Hibernate Tools 6.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="empresa" name="ejemploHibernate.Productos" optimistic-lock="none" table="productos">
+        <composite-id class="ejemploHibernate.ProductosId" name="id">
+            <key-property name="id" type="int">
+                <column name="id"/>
+            </key-property>
+            <key-property name="nombre" type="string">
+                <column length="20" name="nombre"/>
+            </key-property>
+            <key-property name="precio" type="double">
+                <column name="precio" precision="22" scale="0"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
